@@ -79,20 +79,17 @@ print(
 print(voting_model)
 
 # train
-voting_model = voting_model.fit(X_treino_vectors, y_teste)
+voting_model = voting_model.fit(X_treino_vectors, y_treino)
 
 # previsoes com dados de teste
-previsoes = voting_model._predict(X_teste_vectors)
+previsoes = voting_model.predict(X_teste_vectors)
 
 result.append(accuracy_score(y_teste, previsoes))
 
 print(
     f"""
 # ---------------------------------------------------------------------------- #
-#                              Acurácia do modelo                              #
-# ---------------------------------------------------------------------------- #
-#                    {accuracy_score(y_teste, previsoes)}                      #
-# {result}                                                                     #
+                       Acurácia do modelo:   {result[0]}                   
 # ---------------------------------------------------------------------------- #
       """
 )
