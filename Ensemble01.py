@@ -3,7 +3,16 @@
 # e os modelos passarão por uma votação ^^
 
 import numpy as np
+
+####################################################
+# Run the Python interpreter and type the commands:
+# >>> import nltk
+# >>> nltk.download()
+# https://www.nltk.org/data.html
+####################################################
+
 from nltk.corpus import stopwords
+
 from sklearn.datasets import load_files
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
@@ -14,7 +23,7 @@ from sklearn.metrics import accuracy_score
 
 # função load_files economiza o trabalho de loops para percorrer todos os arquivos.
 # sklearn... seu lindo xD
-news = load_files("data", encodiing="utf-8", decode_error="replace")
+news = load_files("data", encoding="utf-8", decode_error="replace")
 
 # separando variáveis de entrada e saída
 X = news.data  # dados
