@@ -30,7 +30,8 @@ Consiste em 2.225 documentos do site de notícias da BBC, publicadas entre 2004 
 4. esporte
 5. tecnologia
 
-
+Votin = todos os modelos fazem as previsões, e suas saídas passam por uma votação
+Staking = as saídas dos modelos individuais alimentam um terceiro modelo
 
 ## Para saber mais
 
