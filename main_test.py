@@ -1,11 +1,5 @@
-from EnsembleLearning import *
-from EnsembleLearning.Ensemble import *
+from PrepareData import LoadDataset
 
-raw_data = DataPrepare()
+dataset = LoadDataset('C:\Codes\Ensemble-Learing-in-Python\data')
 
-raw_data.data_raw('data')
-
-raw_data.separete_Xy()
-
-print(raw_data.y)
-
+print(dataset)
