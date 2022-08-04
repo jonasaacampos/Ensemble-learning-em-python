@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier, StackingClassifier
 from sklearn.metrics import accuracy_score
 
 # Carregando os dados
-noticias = load_files('dados', encoding = 'utf-8', decode_error = 'replace')
+noticias = load_files('data', encoding = 'utf-8', decode_error = 'replace')
 
 # Separando variáveis de entrada e saída
 X = noticias.data

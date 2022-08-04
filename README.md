@@ -35,14 +35,8 @@ Staking = as saídas dos modelos individuais alimentam um terceiro modelo
 
 ## Para saber mais
 
-- https://web.engr.oregonstate.edu/~tgd/publications/mcs-ensembles.pdf
 - https://youtu.be/dhvmVScjrzE
-
-Machine Learning
-Autor: Tom Michael
-Machine Learning with Python for Everyone
-Autor: Mark Fenne
-The Hundred-Page Machine Learning Book
-Autor: Andriy Burkov
-
-D. Greene and P. Cunningham. ("Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering")[D. Greene and P. Cunningham. "Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering", Proc. ICML 2006. ], Proc. ICML 2006. 
+- Tom Michael, Machine Learning
+- Mark Fenne, Machine Learning with Python for Everyone
+- Andriy Burkov, The Hundred-Page Machine Learning Book
+- D. Greene and P. Cunningham. ("Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering")[D. Greene and P. Cunningham. "Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering", Proc. ICML 2006. ], Proc. ICML 2006. 
