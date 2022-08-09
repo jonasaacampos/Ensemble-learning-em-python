@@ -14,7 +14,7 @@
 
 ![](https://img.shields.io/badge/BackEnd-Python-informational?style=flat&logo=Python&logoColor=white&color=059A10)
 
-Anotações e projetos do curso de formação em Engenharia de Machine Learning.
+Anotações e projetos do curso de **formação em Engenharia de Machine Learning** da DS Academy.
 
 > Extrair, tratar e classificar textos para filtrar dados relevantes para auxílio de tomada de decisão do investidor
 
