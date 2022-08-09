@@ -37,17 +37,17 @@ TEST_SIZE = 0.3
 RANDOM_STATE = 75
 
 X_treino, X_teste, y_treino, y_teste = train_test_split(
-    X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE
-)
+        X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE
+        )
 
 # vetorização
 MAX_FEATURES = 1000
 vectorizer = TfidfVectorizer(
-    norm=None,
-    stop_words=my_stop_words,
-    max_features=MAX_FEATURES,
-    decode_error="ignore",
-)
+        norm=None,
+        stop_words=my_stop_words,
+        max_features=MAX_FEATURES,
+        decode_error="ignore",
+        )
 # treina o modelo e vetoriza os dados
 X_treino_vectors = vectorizer.fit_transform(X_treino)
 # vetoriza os dados para teste
@@ -55,27 +55,27 @@ X_teste_vectors = vectorizer.transform(X_teste)
 
 ## Criando os modelos
 modelo1 = LogisticRegression(
-    multi_class="multinomial", solver="lbfgs", random_state=30, max_iter=1000
-)
+        multi_class="multinomial", solver="lbfgs", random_state=30, max_iter=1000
+        )
 # mil árvore de decosões, até 100 folhas
 modelo2 = RandomForestClassifier(n_estimators=1000, max_depth=100, random_state=1)
 
 modelo3 = MultinomialNB()
 
-result = []
+result = [ ]
 
 ## iniciando a votação
 ## recomendado usar número ímpar de modelos para a votação
 voting_model = VotingClassifier(
-    estimators=[("LG", modelo1), ("RF", modelo2), ("NB", modelo3)], voting="soft"
-)
+        estimators=[ ("LG", modelo1), ("RF", modelo2), ("NB", modelo3) ], voting="soft"
+        )
 print(
-    """
-# ---------------------------------------------------------------------------- #
-#                               Modelo de Votação                              #
-# ---------------------------------------------------------------------------- #
-      """
-)
+        """
+    # ---------------------------------------------------------------------------- #
+    #                               Modelo de Votação                              #
+    # ---------------------------------------------------------------------------- #
+          """
+        )
 print(voting_model)
 
 # train
@@ -87,9 +87,9 @@ previsoes = voting_model.predict(X_teste_vectors)
 result.append(accuracy_score(y_teste, previsoes))
 
 print(
-    f"""
+        f"""
 # ---------------------------------------------------------------------------- #
-                       Acurácia do modelo:   {result[0]}                   
+                       Acurácia do modelo:   {result[ 0 ]}                   
 # ---------------------------------------------------------------------------- #
       """
-)
+        )
