@@ -28,8 +28,6 @@ Anotações e projetos do curso de **formação em Engenharia de Machine Learnin
 - [Crédito das imagens](#crédito-das-imagens)
 - [Contato](#contato)
 
-
-
 --------
 
 ## Definição do projeto
@@ -49,6 +47,23 @@ e/ou robustos.
 
 ## Conjuntos de dados
 
+Os dados utilizados são notícias da BBC[^1]. Para esta análise foram utilizados os dados brutos. 
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjQ2bnVtdHdrNzB0emJsYnBwNDB0dDA5eTl0dGRpbWcwdWZuZjVqaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YqENbSOVvEAnCYbhM5/giphy.gif)
+
+> dados brutos na área...
+
+<img alt="dados brutos na área..." src="img/dados-brutos.gif" width=150 align=center>
+
+```bash
+// para baixar os dados, acese o site da bbc, ou baixe o arquivo diretamente via terminal
+
+wget http://mlg.ucd.ie/files/datasets/bbc-fulltext.zip
+
+unzip bbc-fulltext.zip
+
+```
+
 Consiste em 2.225 documentos do site de notícias da BBC, publicadas entre 2004 e 2005, correspondentes a histórias em cinco áreas temáticas:
 
 1. negócios
@@ -66,10 +81,8 @@ Staking = as saídas dos modelos individuais alimentam um terceiro modelo
 - Tom Michael, Machine Learning
 - Mark Fenne, Machine Learning with Python for Everyone
 - Andriy Burkov, The Hundred-Page Machine Learning Book
-- D. Greene and P. Cunningham. ("Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering")[D. Greene and P. Cunningham. "Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering", Proc. ICML 2006. ], Proc. ICML 2006.
 - [sklearn.ensemble.StackingClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html)
 - [Stacked generalization¶](https://scikit-learn.org/stable/modules/ensemble.html#stacking)
-
 
 ## Crédito das imagens
 
@@ -91,3 +104,8 @@ Staking = as saídas dos modelos individuais alimentam um terceiro modelo
     <img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white'/>
   </a>
 </p>
+
+
+## Referências
+
+[^1]: D. Greene and P. Cunningham. ("Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering")[D. Greene and P. Cunningham. "Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering", Proc. ICML 2006. ], Proc. ICML 2006.
